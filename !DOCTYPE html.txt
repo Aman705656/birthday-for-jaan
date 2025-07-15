@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday JAAN 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to top right, #fff0f5, #ffe4e1);
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      margin-top: 30px;
+      color: #d63384;
+    }
+
+    .cake {
+      width: 200px;
+      margin: 40px auto;
+      animation: floatCake 2s ease-in-out infinite;
+    }
+
+    @keyframes floatCake {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .surprise-box {
+      width: 120px;
+      height: 120px;
+      background: #ffc107;
+      margin: 20px auto;
+      border-radius: 15px;
+      position: relative;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .popup {
+      display: none;
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.2);
+      max-width: 350px;
+      text-align: center;
+      margin: 20px auto;
+      font-size: 1em;
+      color: #333;
+    }
+
+    .letter {
+      background: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      margin: 30px auto;
+      max-width: 600px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      font-size: 1.1em;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    .flowers {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .flower {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/616/616408.png');
+      background-size: cover;
+      animation: float 8s linear infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    .dates {
+      text-align: center;
+      margin: 40px 20px 60px;
+      color: #444;
+      font-size: 1.1em;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Happy Birthday JAAN 💖</h1>
+
+<div class="cake">
+  <img src="https://cdn-icons-png.flaticon.com/512/869/869636.png" alt="Cake" width="100%">
+</div>
+
+<div class="surprise-box" onclick="showPopup()">🎁 Surprise</div>
+
+<div class="popup" id="popup">
+  💌 You are the sweetest part of my life, JAAN! I LOVE YOU! 💖💖💖
+</div>
+
+<div class="letter">
+  💌 My Sweet JAAN 💖<br><br>
+  Happy Birthday, my love! 🎉🎂<br>
+  Tum meri zindagi ki sabse khoobsurat feeling ho 😇💖<br>
+  Jab se tum aaye ho, sab kuch pyaara lagne laga hai 🌈✨<br><br>
+  Tumhari muskaan meri duniya hai 😍<br>
+  Tumhara saath meri sabse badi khushi hai 🥰<br>
+  Main har din dua karta hoon ki tum hamesha khush raho 💫❤️<br><br>
+  Aaj ka din sirf tumhara hai 🌸<br>
+  Tumhe har wo khushi mile jo tum deserve karti ho 💝<br>
+  Aur hamesha yaad rakhna — <b>I LOVE YOU JAAN... forever & always!</b> 😘💘<br><br>
+  Tumhara hi, <br>
+  <b>[Your Name]</b> 💖
+</div>
+
+<div class="dates">
+  📅 Important Dates:<br>
+  🌹 First Call: 14 Feb 2023<br>
+  💞 First "I Love You": 10 March 2023<br>
+  🎊 First Meet: 25 March 2023<br>
+  ❤️ Forever: Infinity ♾️
+</div>
+
+<div class="flowers">
+  <div class="flower" style="left:10%; animation-delay: 0s;"></div>
+  <div class="flower" style="left:30%; animation-delay: 2s;"></div>
+  <div class="flower" style="left:50%; animation-delay: 4s;"></div>
+  <div class="flower" style="left:70%; animation-delay: 1s;"></div>
+  <div class="flower" style="left:90%; animation-delay: 3s;"></div>
+</div>
+
+<audio autoplay loop>
+  <source src="https://cdn.pixabay.com/audio/2023/03/24/audio_24024c778f.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  function showPopup() {
+    document.getElementById("popup").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
